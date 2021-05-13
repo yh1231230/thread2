@@ -16,7 +16,7 @@ public class Ticket3 implements Runnable {
 
             //同步代码块
             if ("窗口2".equals(Thread.currentThread().getName())) {
-                synchronized (Ticket3.class) {
+                synchronized (this) {
                     if (ticketCount == 0) {
                         break;
                     } else {
@@ -33,7 +33,7 @@ public class Ticket3 implements Runnable {
         }
     }
 
-    private static synchronized boolean synchronizedMethod() {
+    private  synchronized boolean synchronizedMethod() {
         if (ticketCount == 0) {
             return true;
         } else {

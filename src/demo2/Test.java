@@ -1,5 +1,6 @@
 package demo2;
 
+//模拟死锁
 public class Test {
     public static void main(String[] args) {
         Object objA = new Object();
