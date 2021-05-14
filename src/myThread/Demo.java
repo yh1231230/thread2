@@ -1,6 +1,5 @@
-package mythread;
+package myThread;
 
-import java.io.File;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 

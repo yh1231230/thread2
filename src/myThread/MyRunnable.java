@@ -1,4 +1,4 @@
-package mythread;
+package myThread;
 
 public class MyRunnable implements Runnable {
     @Override
